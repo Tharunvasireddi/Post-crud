@@ -1,86 +1,61 @@
 {
   "posts": [
     {
-      "id": "1",
-      "title": "First post",
-      "views": 150
-    },
-    {
-      "id": "2",
-      "title": "Second post",
-      "views": 250
-    },
-    {
-      "id": "3",
-      "title": "Third post",
-      "views": 300
-    },
-    {
-      "id": "4",
-      "title": "Fourth post",
-      "views": 400
-    },
-    {
-      "id": "5",
-      "title": "Fifth post",
-      "views": 500
-    },
-    {
-      "id": 1738261277891,
-      "title": "sixth Post",
-      "views": 5000
+      "id": 1738342302758,
+      "title": "dhoni posts",
+      "views": 2000000000
     }
   ],
   "comments": [
     {
       "id": "1",
       "text": "Insightful comment on post 1",
-      "postId": "1"
+      "postId": null
     },
     {
       "id": "2",
       "text": "Another thought on post 1",
-      "postId": "1"
+      "postId": null
     },
     {
       "id": "3",
       "text": "First comment on post 2",
-      "postId": "2"
+      "postId": null
     },
     {
       "id": "4",
       "text": "More thoughts on post 2",
-      "postId": "2"
+      "postId": null
     },
     {
       "id": "5",
       "text": "Comment on post 3",
-      "postId": "3"
+      "postId": null
     },
     {
       "id": "6",
       "text": "Another comment on post 3",
-      "postId": "3"
+      "postId": null
     },
     {
       "id": "7",
       "text": "First comment on post 4",
-      "postId": "4"
+      "postId": null
     },
     {
       "id": "8",
       "text": "More thoughts on post 4",
-      "postId": "4"
+      "postId": null
     },
     {
       "id": "9",
       "text": "Comment on post 5",
-      "postId": "5"
+      "postId": null
     },
     {
       "id": "10",
       "text": "Another comment on post 5",
-      "postId": "5"
+      "postId": null
     }
   ],
   "profile": {
