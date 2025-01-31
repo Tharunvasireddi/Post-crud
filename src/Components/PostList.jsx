@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Post from "./Post";
 import toast from "react-hot-toast";
+import EditPostModal from "./EditPostModal";
 
 const PostList = () => {
   const [posts, setPost] = useState([]);
@@ -25,11 +26,23 @@ const PostList = () => {
       
     }
   }
+  const[editPost,setEditpost] = useState({});
+  const[isModalOpen,setIsMOdalOpen] = useState(false);
+  const handleEditPost = (id)=>{
+    const post = posts.find((post)=>post.id === id);
+    setEditpost(post);
+    setIsMOdalOpen(true);
+  }
+  const upDatePost = (updatedPost)=>{
+     setPost([...posts,updatedPost])
+    setIsMOdalOpen(false);
+    }
   return (
     <div className="grid grid-cols-2 space-y-3">
       {posts.map((post, index) => (
-        <Post key={index} title={post.title} views={post.views} onDelete={()=>deletePost(post.id)} />
+        <Post key={index} title={post.title} views={post.views} onDelete={()=>deletePost(post.id)}  onEdit={()=>handleEditPost(post.id)} />
       ))}
+      <EditPostModal isOpen={isModalOpen} post={editPost} onClose={()=>setIsMOdalOpen(flase)} onUpdate={upDatePost}/>
     </div>
   );
 };
